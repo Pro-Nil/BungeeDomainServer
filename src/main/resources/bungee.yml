@@ -1,0 +1,4 @@
+name: BungeeDomainServer
+version: 1.0
+author: Pro_Nil
+main: me.pronil.BungeeDomainServer.BungeeDomainServer
