@@ -1,24 +1,16 @@
 package me.pronil.BungeeDomainServer;
 
 
-import net.md_5.bungee.api.ProxyServer;
-import net.md_5.bungee.api.config.ServerInfo;
-
 import net.md_5.bungee.api.Callback;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.config.ServerInfo;
-import net.md_5.bungee.api.connection.ProxiedPlayer;
-
 import net.md_5.bungee.api.event.PreLoginEvent;
 import net.md_5.bungee.api.event.ServerConnectEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
 import net.md_5.bungee.event.EventHandler;
-
-import java.util.Arrays;
-
 
 import java.util.HashMap;
 
@@ -37,16 +29,6 @@ private String[] server;
         PluginManager pm = getProxy().getPluginManager();
         pm.registerListener(this, this);
     }
-
-
-
-
-
-
-
-
-
-
 
     @EventHandler
     public void onPreLogin(PreLoginEvent event) {
