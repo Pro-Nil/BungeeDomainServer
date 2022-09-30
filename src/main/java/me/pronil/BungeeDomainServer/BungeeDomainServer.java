@@ -1,15 +1,15 @@
 package me.pronil.BungeeDomainServer;
 
-<<<<<<< HEAD
+
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.config.ServerInfo;
-=======
+
 import net.md_5.bungee.api.Callback;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
->>>>>>> b337919 (Improvements)
+
 import net.md_5.bungee.api.event.PreLoginEvent;
 import net.md_5.bungee.api.event.ServerConnectEvent;
 import net.md_5.bungee.api.plugin.Listener;
@@ -18,19 +18,19 @@ import net.md_5.bungee.api.plugin.PluginManager;
 import net.md_5.bungee.event.EventHandler;
 
 import java.util.Arrays;
-<<<<<<< HEAD
-=======
+
+
 import java.util.HashMap;
->>>>>>> b337919 (Improvements)
+
 
 
 public class BungeeDomainServer extends Plugin implements Listener {
 
-<<<<<<< HEAD
+
 private String[] server;
-=======
+
     public static HashMap<String, String[]> serverMap = new HashMap<>();
->>>>>>> b337919 (Improvements)
+
 
     @Override
     public void onEnable() {
@@ -39,26 +39,15 @@ private String[] server;
     }
 
 
-<<<<<<< HEAD
-
-    @EventHandler
-    public void onPreLogin(PreLoginEvent event) {
-        String domain = event.getConnection().getVirtualHost().getHostName().toLowerCase();
-        server = domain.split("\\.",2);
-
-    }
-    @EventHandler
-    public void onServerConnect(ServerConnectEvent event) {
-
-        ServerInfo target = ProxyServer.getInstance().getServerInfo(server[0]);
-        event.setTarget(target);
-
-    }
 
 
 
 
-=======
+
+
+
+
+
     @EventHandler
     public void onPreLogin(PreLoginEvent event) {
         String domain = event.getConnection().getVirtualHost().getHostName().toLowerCase();
@@ -89,5 +78,5 @@ private String[] server;
            }
         }
     }
->>>>>>> b337919 (Improvements)
+
 }
